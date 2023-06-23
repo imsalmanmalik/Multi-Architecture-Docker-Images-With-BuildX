@@ -27,13 +27,14 @@ To build the Docker image, execute the following command:
 
 ```bash
 make build
+```
 
-Running the Server
+### Running the Server
 To run the Node.js server locally using the Docker image, execute the following command:
 
 ```bash
 make run
-
+```
 
 This command will start a Docker container from the built image and expose port 8000 on your machine. You can access the server at http://localhost:8000. The server will respond with a simple message displaying the architecture of the machine.
 
@@ -41,18 +42,18 @@ To stop and remove the running container, execute:
 
 ```bash
 make stop
+```
 
-
-Running the ARM Version
+### Running the ARM Version
 To run the ARM version of the server, execute the following command:
 
 ```bash
 make run-arm
-
+```
 
 This command will start a Docker container from the specific ARM version of the image and expose port 8000 on your machine. You can access the ARM server at http://localhost:8000.
 
-Project Structure
+## Project Structure
 The project has the following structure:
 
 Dockerfile: Contains the instructions to build the Docker image.
@@ -60,7 +61,7 @@ Makefile: Provides convenient commands to build, run, and manage the Docker imag
 package.json: Defines the project metadata and dependencies.
 server.js: Contains the Node.js server code.
 
-Makefile Commands
+## Makefile Commands
 The Makefile includes the following commands:
 
 make build: Builds the multi-architecture Docker image using Docker Buildx.
@@ -70,5 +71,5 @@ make run-arm: Runs the ARM version of the server.
 make inspect: Inspects the Docker image to display information and metadata.
 For more details on each command, refer to the Makefile itself.
 
-Contributing
+## Contributing
 Contributions to the project are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
