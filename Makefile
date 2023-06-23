@@ -23,15 +23,15 @@ run:
 		--name $(CONTAINER_NAME) \
 		salmanmalik98/multi-arch-test
 
-# ARM_SHA?=e98d51ba627abeba76709b7a1aa3892e5f8c56b0b9b178b747bea9ca6b4bcce0
-# run-arm:
-# 	docker run -i -d --rm \
-# 		-p 8000:8000 \
-# 		--name $(CONTAINER_NAME) \
-# 		salmanmalik98/multi-arch-test@sha256:$(ARM_SHA)
+ARM_SHA?=e98d51ba627abeba76709b7a1aa3892e5f8c56b0b9b178b747bea9ca6b4bcce0 #Add your own image digest here 
+run-arm:
+	docker run -i -d --rm \
+		-p 8000:8000 \
+		--name $(CONTAINER_NAME) \
+		salmanmalik98/multi-arch-test@sha256:$(ARM_SHA)
 
-# stop:
-# 	docker stop $(CONTAINER_NAME)
+stop:
+	docker stop $(CONTAINER_NAME)
 
 inspect:
 	docker buildx imagetools inspect salmanmalik98/multi-arch-test:latest
