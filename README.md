@@ -56,20 +56,20 @@ This command will start a Docker container from the specific ARM version of the 
 ## Project Structure
 The project has the following structure:
 
-Dockerfile: Contains the instructions to build the Docker image.
-Makefile: Provides convenient commands to build, run, and manage the Docker image and container.
-package.json: Defines the project metadata and dependencies.
-server.js: Contains the Node.js server code.
+Dockerfile: Contains the instructions to build the Docker image.<br>
+Makefile: Provides convenient commands to build, run, and manage the Docker image and container.<br>
+package.json: Defines the project metadata and dependencies.<br>
+server.js: Contains the Node.js server code.<br>
 
 ## Makefile Commands
 The Makefile includes the following commands:
 
-make build: Builds the multi-architecture Docker image using Docker Buildx.
-make run: Runs the Docker container locally using the built image.
-make stop: Stops and removes the running container.
-make run-arm: Runs the ARM version of the server.
-make inspect: Inspects the Docker image to display information and metadata.
-For more details on each command, refer to the Makefile itself.
+make build: Builds the multi-architecture Docker image using Docker Buildx.<br>
+make run: Runs the Docker container locally using the built image.<br>
+make stop: Stops and removes the running container.<br>
+make run-arm: Runs the ARM version of the server.<br>
+make inspect: Inspects the Docker image to display information and metadata.<br>
+For more details on each command, refer to the Makefile itself.<br>
 
 ## Contributing
 Contributions to the project are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
